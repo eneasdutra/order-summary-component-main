@@ -1,0 +1,152 @@
+/* --- Variables --- */
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --white: hsl(0, 0%, 100%);
+    --bright-blue-hover: hsl(245, 83%, 68%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-color: var(--pale-blue);
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+/* --- Container Principal --- */
+.container {
+    width: 100%;
+    max-width: 450px;
+}
+
+/* --- Card --- */
+.card {
+    background-color: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px hsla(245, 75%, 52%, 0.15);
+    text-align: center;
+}
+.card-img {
+    width: 100%;
+    display: block;
+}
+.card-body {
+    padding: 32px 24px;
+}
+.card-title {
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+.card-description {
+    color: var(--desaturated-blue);
+    line-height: 1.6;
+    margin-bottom: 24px;
+    padding: 0 10px;
+}
+
+/* --- Plan Selector --- */
+.plan-selector {
+    background-color: var(--very-pale-blue);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+.plan-selector-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-align: left;
+}
+.plan-selector-type {
+    font-size: 0.9rem;
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+.plan-selector-price {
+    color: var(--desaturated-blue);
+    font-size: 0.9rem;
+}
+.plan-selector-link {
+    color: var(--bright-blue);
+    font-weight: 700;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+.plan-selector-link:hover {
+    color: var(--bright-blue-hover);
+    text-decoration: none;
+}
+
+/* --- Buttons --- */
+.card-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.btn {
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    font-family: inherit;
+    font-weight: 900;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-primary {
+    background-color: var(--bright-blue);
+    color: var(--white);
+    box-shadow: 0 15px 20px hsla(245, 75%, 52%, 0.2);
+}
+.btn-primary:hover {
+    background-color: var(--bright-blue-hover);
+}
+.btn-text {
+    background-color: transparent;
+    color: var(--desaturated-blue);
+}
+.btn-text:hover {
+    color: var(--dark-blue);
+}
+
+/* --- Footer --- */
+.attribution { 
+    font-size: 10px; text-align: center;
+    margin-top: 1.5rem; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none; 
+}
+
+/* --- Desktop --- */
+@media (min-width: 768px) {
+    body {
+        background-image: url(/images/pattern-background-mobile.svg);
+        background-size: 100% 50%;
+    }
+    .card-body {
+        padding: 45px;
+    }
+}
