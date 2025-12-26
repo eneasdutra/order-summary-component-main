@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/eneasdutra/order-summary-component-main](https://github.com/eneasdutra/order-summary-component-main)
-- URL do Site Live: [https://eneasdutra.github.io/order-summary-component-main/](https://eneasdutra.github.io/order-summary-component-main/)
+- Live Site URL: [https://eneasdutra.github.io/order-summary-component-main/](https://eneasdutra.github.io/order-summary-component-main/)
 
 ## My process
 
